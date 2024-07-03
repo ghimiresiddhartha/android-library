@@ -1,0 +1,26 @@
+apply from: './dependencies.gradle'
+
+buildscript {
+    apply from: './dependencies.gradle'
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$versions.gradlePlugin"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+    }
+}
+
+apply from: "./scripts/publish-root.gradle"
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    tasks.withType(Javadoc).configureEach {
+        enabled = false
+    }
+}

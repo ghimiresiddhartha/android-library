@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply from: '../dependencies.gradle'
+
+android {
+    compileSdkVersion versions.compileSdk
+
+    defaultConfig {
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.compileSdk
+    }
+
+    sourceSets {
+        main.res.srcDirs = ['src/main/res',]
+    }
+    namespace 'np.com.siddharthaghimire'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    api "androidx.lifecycle:lifecycle-runtime-ktx:$versions.androidxLifecycleRuntime"
+}
+
+ext {
+    PUBLISH_GROUP_ID = 'com.github.ghimiresiddhartha'
+    PUBLISH_VERSION = versions.publishVersion_core
+    PUBLISH_ARTIFACT_ID = 'parallax'
+    PUBLISH_DESCRIPTION = 'Parallax View for Android, stable and customizable.'
+}
+
+apply from: "../scripts/publish-module.gradle"

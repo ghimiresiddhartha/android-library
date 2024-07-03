@@ -1,0 +1,17 @@
+ext.versions = [
+        // Project
+        minSdk                          : 17,
+        compileSdk                      : 33,
+
+        publishVersion_paralax          : '0.1.0',
+        publishVersionCode_paralax      : 1,
+
+        androidxLifecycleRuntime        : '2.6.0',
+
+        // Plugins
+        gradlePlugin                    : '8.1.0',
+
+        // Kotlin
+        kotlin                          : '1.8.0',
+
+]
