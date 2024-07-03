@@ -32,7 +32,7 @@ afterEvaluate {
 
                 groupId = "com.github.ghimiresiddhartha"
                 artifactId = "parallax"
-                version = "0.0.1"
+                version = "0.1.0"
 
                 pom {
                     name.set("Parallax")
