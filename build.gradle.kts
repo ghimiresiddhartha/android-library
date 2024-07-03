@@ -4,3 +4,17 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid) apply false
     alias(libs.plugins.androidLibrary) apply false
 }
+
+allprojects {
+    repositories {
+        google()
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+tasks {
+    register("clean", Delete::class) {
+        delete(rootProject.buildDir)
+    }
+}
