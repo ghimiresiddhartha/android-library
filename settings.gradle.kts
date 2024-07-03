@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Parallax Library"
+rootProject.name = "Android Library"
 include(":app")
-include(":Parallax")
+include(":parallax")
