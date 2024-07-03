@@ -30,7 +30,7 @@ dependencies {
 
 ext {
     PUBLISH_GROUP_ID = 'com.github.ghimiresiddhartha'
-    PUBLISH_VERSION = versions.publishVersion_core
+    PUBLISH_VERSION = versions.publishVersion_paralax
     PUBLISH_ARTIFACT_ID = 'parallax'
     PUBLISH_DESCRIPTION = 'Parallax View for Android, stable and customizable.'
 }

@@ -3,8 +3,8 @@ ext.versions = [
         minSdk                          : 17,
         compileSdk                      : 33,
 
-        publishVersion_paralax          : '0.1.0',
-        publishVersionCode_paralax      : 1,
+        publishVersion_paralax          : '0.1.1',
+        publishVersionCode_paralax      : 2,
 
         androidxLifecycleRuntime        : '2.6.0',
 
