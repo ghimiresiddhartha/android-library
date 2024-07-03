@@ -5,6 +5,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:$versions.gradlePlugin"
@@ -18,9 +19,6 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-    }
-
-    tasks.withType(Javadoc).configureEach {
-        enabled = false
+        maven { url 'https://jitpack.io' }
     }
 }
