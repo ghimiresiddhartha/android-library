@@ -35,4 +35,4 @@ ext {
     PUBLISH_DESCRIPTION = 'Parallax View for Android, stable and customizable.'
 }
 
-apply from: "../scripts/publish-module.gradle"
+apply from: "../publish-module.gradle"
